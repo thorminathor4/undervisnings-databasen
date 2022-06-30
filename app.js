@@ -14,4 +14,4 @@ app.get("/toplists/list/:name", (req, res) => {
 app.get("/help", (req, res) => res.sendFile(path.resolve("./Public/hjælp.html")));
 app.get("/about", (req, res) => res.sendFile(path.resolve("./Public/om.html")));
 
-app.listen(4000 || process.env.PORT);
+app.listen(process.env.PORT || 4000);
